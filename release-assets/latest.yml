@@ -1,12 +1,11 @@
-version: 1.0.12
+version: 1.0.13
 files:
-  - url: moyuwx-tools-1.0.12-setup-x64.exe
-    sha512: zo4EXawss3O4NxO7ksaAVy6ht0S/qB2x216B3aRlTRAoOgZcO2MDDQOomacUWrtiqS6YzTMdUgoct4/vJNi5aw==
-    size: 149840030
-path: moyuwx-tools-1.0.12-setup-x64.exe
-sha512: zo4EXawss3O4NxO7ksaAVy6ht0S/qB2x216B3aRlTRAoOgZcO2MDDQOomacUWrtiqS6YzTMdUgoct4/vJNi5aw==
-releaseDate: '2026-07-27T09:23:13.139Z'
+  - url: moyuwx-tools-1.0.13-setup-x64.exe
+    sha512: BImT85dIE79PnUWFd7632/AkV2+OdPoN0JunT7wgEvF/Nb5azcm+B+KEb+TLPKEHmZnkw9aOsBZJEXevT/Bo8g==
+    size: 149840137
+path: moyuwx-tools-1.0.13-setup-x64.exe
+sha512: BImT85dIE79PnUWFd7632/AkV2+OdPoN0JunT7wgEvF/Nb5azcm+B+KEb+TLPKEHmZnkw9aOsBZJEXevT/Bo8g==
+releaseDate: '2026-07-27T10:20:08.502Z'
 releaseNotes: |
-  - 修复已是最新版时不显示当前版本说明的问题。
-  - 补充 Gitee 主清单与 GitHub Raw 兜底清单中的版本说明。
-  - 保持 Windows 安装版与便携版的本地构建发布流程。
+  - 检测到新版本时增加“手动下载”入口，可直接打开 GitHub Releases。
+  - 增加 GitHub 网络访问提示，自动下载中或失败时仍可改用手动下载。
