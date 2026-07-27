@@ -14,30 +14,6 @@ permissions:
   contents: write
 
 jobs:
-  publish-tag:
-    if: startsWith(github.ref, 'refs/tags/')
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout prebuilt artifacts
-        uses: actions/checkout@v4
-        with:
-          lfs: true
-          fetch-depth: 1
-
-      - name: Publish release assets
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ github.ref_name }}
-        run: |
-            gh release create "$RELEASE_TAG" \
-              --repo "$GITHUB_REPOSITORY" \
-              --title "MoyuTools $RELEASE_TAG" \
-              --generate-notes \
-              release-assets/latest.yml \
-            "moyuwx-tools-${RELEASE_TAG#v}-setup-x64.exe" \
-            "moyuwx-tools-${RELEASE_TAG#v}-portable-x64.exe" \
-            "moyuwx-tools-${RELEASE_TAG#v}-setup-x64.exe.blockmap"
-
   refresh-manifest:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
