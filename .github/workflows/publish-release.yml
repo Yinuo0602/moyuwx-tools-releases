@@ -25,7 +25,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          RELEASE_VERSION=$(sed -n 's/^version: *//p' latest.yml | head -n 1)
+          RELEASE_VERSION=$(sed -n 's/^version: *//p' release-assets/latest.yml | head -n 1)
           gh release upload "v${RELEASE_VERSION}" \
             --repo "$GITHUB_REPOSITORY" \
             --clobber \
