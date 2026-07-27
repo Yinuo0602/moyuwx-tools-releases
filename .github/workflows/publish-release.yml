@@ -29,14 +29,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
-          gh release create "$RELEASE_TAG" \
-            --repo "$GITHUB_REPOSITORY" \
-            --title "MoyuTools $RELEASE_TAG" \
-            --generate-notes \
-            release-assets/latest.yml \
-            moyuwx-tools-1.0.11-setup-x64.exe \
-            moyuwx-tools-1.0.11-portable-x64.exe \
-            moyuwx-tools-1.0.11-setup-x64.exe.blockmap
+            gh release create "$RELEASE_TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "MoyuTools $RELEASE_TAG" \
+              --generate-notes \
+              release-assets/latest.yml \
+            "moyuwx-tools-${RELEASE_TAG#v}-setup-x64.exe" \
+            "moyuwx-tools-${RELEASE_TAG#v}-portable-x64.exe" \
+            "moyuwx-tools-${RELEASE_TAG#v}-setup-x64.exe.blockmap"
 
   refresh-manifest:
     if: github.ref == 'refs/heads/main'
@@ -45,11 +45,12 @@ jobs:
       - name: Checkout release manifest
         uses: actions/checkout@v4
 
-      - name: Replace v1.0.11 release manifest
+      - name: Replace current release manifest
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release upload v1.0.11 \
+          RELEASE_VERSION=$(sed -n 's/^version: *//p' latest.yml | head -n 1)
+          gh release upload "v${RELEASE_VERSION}" \
             --repo "$GITHUB_REPOSITORY" \
             --clobber \
             release-assets/latest.yml

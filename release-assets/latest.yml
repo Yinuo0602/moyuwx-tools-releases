@@ -1,8 +1,12 @@
-version: 1.0.11
+version: 1.0.12
 files:
-  - url: moyuwx-tools-1.0.11-setup-x64.exe
-    sha512: MBXRQcGlS8o+O5x45AJlhhwuP+3qjVu/Yt1kurQ+YNc8V4zliv7CXyQGjvgMEvmzavLYlJfplLrb4Wl7MpM35A==
-    size: 149840144
-path: moyuwx-tools-1.0.11-setup-x64.exe
-sha512: MBXRQcGlS8o+O5x45AJlhhwuP+3qjVu/Yt1kurQ+YNc8V4zliv7CXyQGjvgMEvmzavLYlJfplLrb4Wl7MpM35A==
-releaseDate: '2026-07-27T07:57:59.480Z'
+  - url: moyuwx-tools-1.0.12-setup-x64.exe
+    sha512: zo4EXawss3O4NxO7ksaAVy6ht0S/qB2x216B3aRlTRAoOgZcO2MDDQOomacUWrtiqS6YzTMdUgoct4/vJNi5aw==
+    size: 149840030
+path: moyuwx-tools-1.0.12-setup-x64.exe
+sha512: zo4EXawss3O4NxO7ksaAVy6ht0S/qB2x216B3aRlTRAoOgZcO2MDDQOomacUWrtiqS6YzTMdUgoct4/vJNi5aw==
+releaseDate: '2026-07-27T09:23:13.139Z'
+releaseNotes: |
+  - 修复已是最新版时不显示当前版本说明的问题。
+  - 补充 Gitee 主清单与 GitHub Raw 兜底清单中的版本说明。
+  - 保持 Windows 安装版与便携版的本地构建发布流程。
