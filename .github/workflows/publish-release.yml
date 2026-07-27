@@ -4,12 +4,18 @@ on:
   push:
     tags:
       - "v*"
+    branches:
+      - main
+    paths:
+      - "release-assets/latest.yml"
+      - ".github/workflows/publish-release.yml"
 
 permissions:
   contents: write
 
 jobs:
-  publish:
+  publish-tag:
+    if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout prebuilt artifacts
@@ -27,7 +33,23 @@ jobs:
             --repo "$GITHUB_REPOSITORY" \
             --title "MoyuTools $RELEASE_TAG" \
             --generate-notes \
-            latest.yml \
+            release-assets/latest.yml \
             moyuwx-tools-1.0.11-setup-x64.exe \
             moyuwx-tools-1.0.11-portable-x64.exe \
             moyuwx-tools-1.0.11-setup-x64.exe.blockmap
+
+  refresh-manifest:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release manifest
+        uses: actions/checkout@v4
+
+      - name: Replace v1.0.11 release manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v1.0.11 \
+            --repo "$GITHUB_REPOSITORY" \
+            --clobber \
+            release-assets/latest.yml
