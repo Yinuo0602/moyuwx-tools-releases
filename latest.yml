@@ -1,0 +1,8 @@
+version: 1.0.11
+files:
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.11/moyuwx-tools-1.0.11-setup-x64.exe
+    sha512: MBXRQcGlS8o+O5x45AJlhhwuP+3qjVu/Yt1kurQ+YNc8V4zliv7CXyQGjvgMEvmzavLYlJfplLrb4Wl7MpM35A==
+    size: 149840144
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.11/moyuwx-tools-1.0.11-setup-x64.exe
+sha512: MBXRQcGlS8o+O5x45AJlhhwuP+3qjVu/Yt1kurQ+YNc8V4zliv7CXyQGjvgMEvmzavLYlJfplLrb4Wl7MpM35A==
+releaseDate: '2026-07-27T07:57:59.480Z'

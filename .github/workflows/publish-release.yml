@@ -1,0 +1,33 @@
+name: Publish prebuilt Windows release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout prebuilt artifacts
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$RELEASE_TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "MoyuTools $RELEASE_TAG" \
+            --generate-notes \
+            latest.yml \
+            moyuwx-tools-1.0.11-setup-x64.exe \
+            moyuwx-tools-1.0.11-portable-x64.exe \
+            moyuwx-tools-1.0.11-setup-x64.exe.blockmap
