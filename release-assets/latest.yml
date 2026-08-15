@@ -1,12 +1,13 @@
-version: 1.0.15
+version: 1.0.16
 files:
-  - url: moyuwx-tools-1.0.15-setup-x64.exe
-    sha512: Q3Tf9nyLTGn1uy6dnUEQSGv6SFWMXgRTPp78z9+jnKHi/Xh1WU34p3yk1crIBoCdXSK/PuTrfC1p18ANle0Njg==
-    size: 149852768
-path: moyuwx-tools-1.0.15-setup-x64.exe
-sha512: Q3Tf9nyLTGn1uy6dnUEQSGv6SFWMXgRTPp78z9+jnKHi/Xh1WU34p3yk1crIBoCdXSK/PuTrfC1p18ANle0Njg==
-releaseDate: '2026-08-15T12:03:57.772Z'
+  - url: moyuwx-tools-1.0.16-setup-x64.exe
+    sha512: G3wDdM/lE7c1vcYRbpxVaLXYTjI4ytzIUkHsV134te/Aj8IxfujQyWVjaGnIc/8mR8um7P/eGnfNnfArrTFFww==
+    size: 149859795
+path: moyuwx-tools-1.0.16-setup-x64.exe
+sha512: G3wDdM/lE7c1vcYRbpxVaLXYTjI4ytzIUkHsV134te/Aj8IxfujQyWVjaGnIc/8mR8um7P/eGnfNnfArrTFFww==
+releaseDate: '2026-08-15T16:45:46.635Z'
 releaseNotes: |
-  - 授权方式改为本地 Ed25519 签名文件，不再依赖在线授权管理站点。
-  - 新增设备绑定的离线授权申请与许可证导入，并通过双源 HTTPS 时间校验有效期。
-  - 新增签名吊销清单校验，联网时从 Gitee 与 GitHub 静态地址同步吊销状态。
+  - 新增一次性限时免费试用，通过签名策略控制开关与天数，并保留跨卸载重装的本机领取记录。
+  - 正式许可证导入改为暂存校验，只有签名、设备、有效期和吊销状态全部通过后才替换当前授权。
+  - 优化双源在线校时、吊销清单和试用策略校验，联网成功时立即执行吊销或紧急停用，双源失败时才使用离线宽限。
+  - 完善试用与正式授权界面，支持试用期间导入许可证，并正确显示已吊销、免费试用等授权状态。
