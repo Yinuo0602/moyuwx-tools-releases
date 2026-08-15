@@ -1,11 +1,12 @@
-version: 1.0.14
+version: 1.0.15
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.14/moyuwx-tools-1.0.14-setup-x64.exe
-    sha512: WTe8Y1yKkV+tSQjlPpcWFrJq5YbcNpCrTFZuDuBcxKmrpQk8tAGXL+DhYw47dUmbyAfbXBWc5m3JDbhXyeH/ZQ==
-    size: 149841233
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.14/moyuwx-tools-1.0.14-setup-x64.exe
-sha512: WTe8Y1yKkV+tSQjlPpcWFrJq5YbcNpCrTFZuDuBcxKmrpQk8tAGXL+DhYw47dUmbyAfbXBWc5m3JDbhXyeH/ZQ==
-releaseDate: '2026-07-27T11:18:47.691Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.15/moyuwx-tools-1.0.15-setup-x64.exe
+    sha512: Q3Tf9nyLTGn1uy6dnUEQSGv6SFWMXgRTPp78z9+jnKHi/Xh1WU34p3yk1crIBoCdXSK/PuTrfC1p18ANle0Njg==
+    size: 149852768
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.15/moyuwx-tools-1.0.15-setup-x64.exe
+sha512: Q3Tf9nyLTGn1uy6dnUEQSGv6SFWMXgRTPp78z9+jnKHi/Xh1WU34p3yk1crIBoCdXSK/PuTrfC1p18ANle0Njg==
+releaseDate: '2026-08-15T12:03:57.772Z'
 releaseNotes: |
-  - 检查更新时并发请求 Gitee 与 GitHub Raw，使用首个返回的有效清单，不等待或对比另一线路。
-  - 更新源返回异常或获胜线路后续请求偶发失败时，自动尝试另一线路。
+  - 授权方式改为本地 Ed25519 签名文件，不再依赖在线授权管理站点。
+  - 新增设备绑定的离线授权申请与许可证导入，并通过双源 HTTPS 时间校验有效期。
+  - 新增签名吊销清单校验，联网时从 Gitee 与 GitHub 静态地址同步吊销状态。
