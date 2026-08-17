@@ -1,13 +1,11 @@
-version: 1.0.16
+version: 1.0.17
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.16/moyuwx-tools-1.0.16-setup-x64.exe
-    sha512: G3wDdM/lE7c1vcYRbpxVaLXYTjI4ytzIUkHsV134te/Aj8IxfujQyWVjaGnIc/8mR8um7P/eGnfNnfArrTFFww==
-    size: 149859795
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.16/moyuwx-tools-1.0.16-setup-x64.exe
-sha512: G3wDdM/lE7c1vcYRbpxVaLXYTjI4ytzIUkHsV134te/Aj8IxfujQyWVjaGnIc/8mR8um7P/eGnfNnfArrTFFww==
-releaseDate: '2026-08-15T16:45:46.635Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.17/moyuwx-tools-1.0.17-setup-x64.exe
+    sha512: bpz+k7EDUFCW4K9F2GAzyHvjmG3RmdZSPDMxrJasMNFCfelOUKPF8dl4mScjDmOOLPdtWj50Sst7kN+fBXukNA==
+    size: 149862449
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.17/moyuwx-tools-1.0.17-setup-x64.exe
+sha512: bpz+k7EDUFCW4K9F2GAzyHvjmG3RmdZSPDMxrJasMNFCfelOUKPF8dl4mScjDmOOLPdtWj50Sst7kN+fBXukNA==
+releaseDate: '2026-08-17T16:23:03.736Z'
 releaseNotes: |
-  - 新增一次性限时免费试用，通过签名策略控制开关与天数，并保留跨卸载重装的本机领取记录。
-  - 正式许可证导入改为暂存校验，只有签名、设备、有效期和吊销状态全部通过后才替换当前授权。
-  - 优化双源在线校时、吊销清单和试用策略校验，联网成功时立即执行吊销或紧急停用，双源失败时才使用离线宽限。
-  - 完善试用与正式授权界面，支持试用期间导入许可证，并正确显示已吊销、免费试用等授权状态。
+  - 新增冷启动进度页，在主界面完成初始化前显示品牌、进度条和当前启动阶段。
+  - 主窗口改为 Electron 就绪后立即创建，减少首次启动时双击后长时间看不到窗口的等待感。
