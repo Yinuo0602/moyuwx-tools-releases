@@ -1,11 +1,13 @@
-version: 1.0.17
+version: 1.1.0
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.17/moyuwx-tools-1.0.17-setup-x64.exe
-    sha512: bpz+k7EDUFCW4K9F2GAzyHvjmG3RmdZSPDMxrJasMNFCfelOUKPF8dl4mScjDmOOLPdtWj50Sst7kN+fBXukNA==
-    size: 149862449
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.0.17/moyuwx-tools-1.0.17-setup-x64.exe
-sha512: bpz+k7EDUFCW4K9F2GAzyHvjmG3RmdZSPDMxrJasMNFCfelOUKPF8dl4mScjDmOOLPdtWj50Sst7kN+fBXukNA==
-releaseDate: '2026-08-17T16:23:03.736Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.0/moyuwx-tools-1.1.0-setup-x64.exe
+    sha512: i/nj1dN89eaPtDW3wRJr0sDNQ7fZHfdaLjICn3OppM8ruw5TKtUYbZI8rCdt6s13qFSuNwQbxYOR/jIErtBHCw==
+    size: 175236951
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.0/moyuwx-tools-1.1.0-setup-x64.exe
+sha512: i/nj1dN89eaPtDW3wRJr0sDNQ7fZHfdaLjICn3OppM8ruw5TKtUYbZI8rCdt6s13qFSuNwQbxYOR/jIErtBHCw==
+releaseDate: '2026-08-21T12:11:22.967Z'
 releaseNotes: |
-  - 新增冷启动进度页，在主界面完成初始化前显示品牌、进度条和当前启动阶段。
-  - 主窗口改为 Electron 就绪后立即创建，减少首次启动时双击后长时间看不到窗口的等待感。
+  - 新增全网去水印工具，支持多平台分享链接解析以及视频、图集和 Live Photo 本地保存。
+  - 新增微信下载工具，内置两套视频号下载方案，并完善批量分页、当前作品识别和 H.264 兼容转换。
+  - 正式授权改为 32 位设备码与紧凑离线激活码，不再要求客户导出或导入授权文件。
+  - 新激活码统一使用 MOYU- 前缀并兼容旧 MOYU1- 激活码；客户端版本仅作为本地签发记录，不参与授权校验。
