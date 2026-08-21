@@ -1,11 +1,12 @@
-version: 1.1.1
+version: 1.1.2
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.1/moyuwx-tools-1.1.1-setup-x64.exe
-    sha512: jo/duW9DvqanQVPVhDn5D5+KTTmpzeUB3ivj6l/ho9mLI124AO3SRP9Kcq/dgNcvGP+7zyJuBYs+JWISRE782w==
-    size: 175237560
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.1/moyuwx-tools-1.1.1-setup-x64.exe
-sha512: jo/duW9DvqanQVPVhDn5D5+KTTmpzeUB3ivj6l/ho9mLI124AO3SRP9Kcq/dgNcvGP+7zyJuBYs+JWISRE782w==
-releaseDate: '2026-08-21T13:34:14.173Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.2/moyuwx-tools-1.1.2-setup-x64.exe
+    sha512: QqG0xZoQsTel+vMyL9ADPlR5W4HiI2TnSkihEqYJrh5I30z+BU7YC3iKb8WNooaiOve6DPKqfU9YKHv7GKtkcA==
+    size: 175238609
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.2/moyuwx-tools-1.1.2-setup-x64.exe
+sha512: QqG0xZoQsTel+vMyL9ADPlR5W4HiI2TnSkihEqYJrh5I30z+BU7YC3iKb8WNooaiOve6DPKqfU9YKHv7GKtkcA==
+releaseDate: '2026-08-21T16:31:31.055Z'
 releaseNotes: |
-  - 未授权功能在左侧导航中保持灰度，不再额外显示“需授权”文字。
-  - 授权弹窗和右下角通知不再显示 Electron 调用前缀，纯英文系统错误统一替换为中文提示。
+  - 信息处理列表和媒体资源卡片执行操作后保持当前滚动位置，不再跳回页面顶部。
+  - 媒体类型优先依据 MIME 与文件扩展名判断，避免文件名含有 video 的 JPEG 缩略图被误判为视频。
+  - 网络视频的空响应与 206 分段响应不再冒充完整文件，预览和下载会回退原网络地址，避免生成无法播放的 MP4。
