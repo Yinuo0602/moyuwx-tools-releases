@@ -1,13 +1,11 @@
-version: 1.1.0
+version: 1.1.1
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.0/moyuwx-tools-1.1.0-setup-x64.exe
-    sha512: i/nj1dN89eaPtDW3wRJr0sDNQ7fZHfdaLjICn3OppM8ruw5TKtUYbZI8rCdt6s13qFSuNwQbxYOR/jIErtBHCw==
-    size: 175236951
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.0/moyuwx-tools-1.1.0-setup-x64.exe
-sha512: i/nj1dN89eaPtDW3wRJr0sDNQ7fZHfdaLjICn3OppM8ruw5TKtUYbZI8rCdt6s13qFSuNwQbxYOR/jIErtBHCw==
-releaseDate: '2026-08-21T12:11:22.967Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.1/moyuwx-tools-1.1.1-setup-x64.exe
+    sha512: jo/duW9DvqanQVPVhDn5D5+KTTmpzeUB3ivj6l/ho9mLI124AO3SRP9Kcq/dgNcvGP+7zyJuBYs+JWISRE782w==
+    size: 175237560
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.1/moyuwx-tools-1.1.1-setup-x64.exe
+sha512: jo/duW9DvqanQVPVhDn5D5+KTTmpzeUB3ivj6l/ho9mLI124AO3SRP9Kcq/dgNcvGP+7zyJuBYs+JWISRE782w==
+releaseDate: '2026-08-21T13:34:14.173Z'
 releaseNotes: |
-  - 新增全网去水印工具，支持多平台分享链接解析以及视频、图集和 Live Photo 本地保存。
-  - 新增微信下载工具，内置两套视频号下载方案，并完善批量分页、当前作品识别和 H.264 兼容转换。
-  - 正式授权改为 32 位设备码与紧凑离线激活码，不再要求客户导出或导入授权文件。
-  - 新激活码统一使用 MOYU- 前缀并兼容旧 MOYU1- 激活码；客户端版本仅作为本地签发记录，不参与授权校验。
+  - 未授权功能在左侧导航中保持灰度，不再额外显示“需授权”文字。
+  - 授权弹窗和右下角通知不再显示 Electron 调用前缀，纯英文系统错误统一替换为中文提示。
