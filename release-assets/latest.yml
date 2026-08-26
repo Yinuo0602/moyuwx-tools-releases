@@ -1,14 +1,11 @@
-version: 1.1.3
+version: 1.1.4
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.3/moyuwx-tools-1.1.3-setup-x64.exe
-    sha512: BkCmCqMdahJf7dsHQeb/0qBeSEjgdscyW1cWn7B+1fDaaJyXZSX50xEfGAd33SBZ54g5n56rvZGjPdijnO1qrw==
-    size: 189850105
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.3/moyuwx-tools-1.1.3-setup-x64.exe
-sha512: BkCmCqMdahJf7dsHQeb/0qBeSEjgdscyW1cWn7B+1fDaaJyXZSX50xEfGAd33SBZ54g5n56rvZGjPdijnO1qrw==
-releaseDate: '2026-08-26T17:52:42.276Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.4/moyuwx-tools-1.1.4-setup-x64.exe
+    sha512: 9pTilkxIFheF+9zP7036G5F26BCspx22Nb/hdGPwYJSZFUCiRO5MY+oT/+UBYcXsT3hcCya+dpwemqo7XHYIYg==
+    size: 189851482
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.4/moyuwx-tools-1.1.4-setup-x64.exe
+sha512: 9pTilkxIFheF+9zP7036G5F26BCspx22Nb/hdGPwYJSZFUCiRO5MY+oT/+UBYcXsT3hcCya+dpwemqo7XHYIYg==
+releaseDate: '2026-08-26T19:49:25.920Z'
 releaseNotes: |
-  - 新增免费备案查询，支持按域名或主办单位批量查询、自动翻页、进度展示和接口限流退避。
-  - 微信调试拆分小程序与网页标签，新增直接 H5 Hook，并保留通过小程序建立兼容通道的兜底方式。
-  - 新增 WMPF 版本适配界面，可自动查找或导入 flue.dll，提取完整小程序与 H5 偏移并保存对应配置。
-  - 更新并重新适配两套视频号下载组件，修复当前作品识别、签名原始地址、原始流检测及下载后处理。
-  - 兼容版和增强版后台命令统一使用无窗口方式运行，避免 PowerShell 或命令提示符反复弹出干扰操作。
+  - 修复直接 H5 Hook 在线程切换后可能卡死并连续出现发送超时的问题，改为唤醒 Chromium 消息泵后在浏览器主线程安全执行 CDP 请求。
+  - 直接 H5 主线程消息泵异常时会在限定时间内恢复并返回明确错误，小程序兼容通道继续作为独立兜底。
