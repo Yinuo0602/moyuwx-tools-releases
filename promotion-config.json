@@ -1,0 +1,17 @@
+{
+  "topPromotion": {
+    "enabled": 1,
+    "intervalMs": 6000,
+    "items": [
+      {
+        "enabled": 1,
+        "order": 10,
+        "id": "codex-plus",
+        "label": "推广",
+        "name": "Codex Plus 30天成品号，Gemini绑定自己账号订阅一年 Pro，需要的了解一下",
+        "url": "https://pay.ldxp.cn/shop/chengyan",
+        "action": "选购"
+      }
+    ]
+  }
+}
