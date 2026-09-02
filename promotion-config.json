@@ -1,6 +1,6 @@
 {
   "topPromotion": {
-    "enabled": 1,
+    "enabled": 0,
     "intervalMs": 6000,
     "items": [
       {
