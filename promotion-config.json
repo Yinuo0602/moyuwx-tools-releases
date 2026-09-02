@@ -1,10 +1,10 @@
 {
   "topPromotion": {
-    "enabled": 0,
+    "enabled": 1,
     "intervalMs": 6000,
     "items": [
       {
-        "enabled": 0,
+        "enabled": 1,
         "order": 10,
         "id": "codex-plus",
         "label": "推广",
