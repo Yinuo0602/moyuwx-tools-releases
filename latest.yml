@@ -1,12 +1,11 @@
-version: 1.1.6
+version: 1.1.7
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.6/moyuwx-tools-1.1.6-setup-x64.exe
-    sha512: 8HzVAI/K5BRT0psXeA37P9VNEWek3lev+REg1CdxNCvg2flv/RVCwIMrjd/MzgY3Y8vodhcARyQc30ogzo9Yow==
-    size: 189862825
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.6/moyuwx-tools-1.1.6-setup-x64.exe
-sha512: 8HzVAI/K5BRT0psXeA37P9VNEWek3lev+REg1CdxNCvg2flv/RVCwIMrjd/MzgY3Y8vodhcARyQc30ogzo9Yow==
-releaseDate: '2026-09-02T09:10:03.578Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.7/moyuwx-tools-1.1.7-setup-x64.exe
+    sha512: nWk6d5mqSWRNPR0C2df4WuN91vYL/k7c+Sjpv3f+bBowNHCSaRxVNnKnZZ8MXgwCMAsstgN4zQ/w4HqEvc9Vhg==
+    size: 191858777
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.7/moyuwx-tools-1.1.7-setup-x64.exe
+sha512: nWk6d5mqSWRNPR0C2df4WuN91vYL/k7c+Sjpv3f+bBowNHCSaRxVNnKnZZ8MXgwCMAsstgN4zQ/w4HqEvc9Vhg==
+releaseDate: '2026-09-10T11:37:40.735Z'
 releaseNotes: |
-  - 新增软件顶部推广栏，支持通过 JSON 配置多个广告、0/1 开关、显示顺序、滚动间隔、名称、地址和按钮文案。
-  - 软件启动时并发读取 Gitee 与 GitHub 双源推广配置，任一来源有效即可加载；远端不可用时自动使用内置配置。
-  - 备案查询新增备案类型选择，并将原生下拉框改为与软件一致的美化样式，支持网站、App、小程序和快应用。
+  - 全网去水印新增 YouTube 与 TikTok，本地解析视频信息，并支持使用内置 FFmpeg 合并 YouTube 高清分离音视频流。
+  - 修复 YouTube 在浏览器可访问但本地解析或下载连接失败的问题，解析与下载会复用可用的系统代理线路。
