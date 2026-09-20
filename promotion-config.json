@@ -4,7 +4,7 @@
     "intervalMs": 6000,
     "items": [
       {
-        "enabled": 1,
+        "enabled": 0,
         "order": 10,
         "id": "codex-plus",
         "label": "推广",
