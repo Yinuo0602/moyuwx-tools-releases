@@ -1,11 +1,12 @@
-version: 1.1.7
+version: 1.1.8
 files:
-  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.7/moyuwx-tools-1.1.7-setup-x64.exe
-    sha512: nWk6d5mqSWRNPR0C2df4WuN91vYL/k7c+Sjpv3f+bBowNHCSaRxVNnKnZZ8MXgwCMAsstgN4zQ/w4HqEvc9Vhg==
-    size: 191858777
-path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.7/moyuwx-tools-1.1.7-setup-x64.exe
-sha512: nWk6d5mqSWRNPR0C2df4WuN91vYL/k7c+Sjpv3f+bBowNHCSaRxVNnKnZZ8MXgwCMAsstgN4zQ/w4HqEvc9Vhg==
-releaseDate: '2026-09-10T11:37:40.735Z'
+  - url: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.8/moyuwx-tools-1.1.8-setup-x64.exe
+    sha512: O27VonqyUAH2ZA+Sv9j1g5qd5negrxIoMKPp7selmi/iq657ZB6ikiYy/Ndg1gDrJsrb7Q11pIbLkNZkVYFBlw==
+    size: 200205141
+path: https://github.com/Yinuo0602/moyuwx-tools-releases/releases/download/v1.1.8/moyuwx-tools-1.1.8-setup-x64.exe
+sha512: O27VonqyUAH2ZA+Sv9j1g5qd5negrxIoMKPp7selmi/iq657ZB6ikiYy/Ndg1gDrJsrb7Q11pIbLkNZkVYFBlw==
+releaseDate: '2026-09-20T02:46:51.888Z'
 releaseNotes: |
-  - 全网去水印新增 YouTube 与 TikTok，本地解析视频信息，并支持使用内置 FFmpeg 合并 YouTube 高清分离音视频流。
-  - 修复 YouTube 在浏览器可访问但本地解析或下载连接失败的问题，解析与下载会复用可用的系统代理线路。
+  - 更新微信小程序调试组件和 WMPF 偏移适配，修复微信网页跳转或滚动后 DevTools 偶发停在旧页面的问题。
+  - 升级视频号兼容版与增强版下载组件，修复部分视频下载后无画面、兼容版处理失败及 FFmpeg 窗口弹出的问题。
+  - 优化兼容版视频处理速度与停止服务流程；增强版增加下载后画面校验与兼容转换。
